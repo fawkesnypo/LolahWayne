@@ -1,2 +1,1 @@
-# LolahWayne
-SinglePage
+Projeto de landing page utilizando framework Tailwind

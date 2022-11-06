@@ -1,0 +1,71 @@
+.gradient {
+    background: linear-gradient(90deg, #7f1ae5 0%,#e595b5 55%,#F0A1C0 100%);
+  }
+
+.img-size{
+    width: 120vw;
+    height: 100%;
+    border-radius: 1% ;
+    border-style: inset;
+}
+
+.profile-img{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact-img{
+    background: whitesmoke;
+    border-radius: 50%;
+    box-shadow: 5px 10px 8px rgb(43, 42, 42);
+}
+
+.carousel{
+    align-items: center;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 50;
+}
+.carousel-item {
+    padding: 2%;
+    -webkit-transition: opacity 0.8s ease-out;
+    transition: opacity 0.8s ease-out;
+}
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+}
